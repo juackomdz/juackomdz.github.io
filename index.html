@@ -8,11 +8,16 @@
 </head>
 <body>
     <script>
-        // const nums = [];
-        // Math.random();
+        
         function sortearAct()
         {
-            document.getElementById("sorteo").value=(Math.floor(Math.random()*31));
+            var numeros = [];
+            for(i=0;i<5;i++)
+            {
+                numeros.push(Math.floor(Math,random()*31));
+                
+            }
+            document.getElementById("sorteo").value=numeros.join("-");
         }
     </script>
     <form id="form1" class="align-items-center row gy-2 gx-3">
