@@ -10,3 +10,9 @@ h2{
 body{
     font-family: 'Titillium Web', sans-serif;
 }
+
+@media (max-width: 480px) {
+    input.sorteo{
+        width: 200px;
+    }
+}
