@@ -1,4 +1,4 @@
-input.sorteo{
+#sorteo{
     width: 300px;
     text-align: center;
 }
@@ -12,7 +12,7 @@ body{
 }
 
 @media (max-width: 480px) {
-    input.sorteo{
+    #sorteo{
         width: 200px;
     }
 }

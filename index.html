@@ -14,14 +14,16 @@
 </head>
 <body>
     <script>
+        //while puede ser una opcion para eliminar duplicados
         function sortearAct()
         {
             const numeros = [];
             for(i=0;i<5;i++)
             {
-                numeros.push(Math.floor(Math.random()*31)+1);
+                numeros.push(Math.floor(Math.random()*30)+1);
             }
-            document.getElementById("sorteo").value=numeros.join("-");
+            const iguales=[... new Set(numeros)];
+            document.getElementById("sorteo").value=iguales.join("-");
         }
     </script>
     <form id="form1">
@@ -30,7 +32,7 @@
         </header>
          
         <div align="center" class="form-control">
-            <input class="form-control" type="text" id="sorteo" readonly style="width: 600px; text-align: center;"/>
+            <input class="form-control" type="text" id="sorteo" readonly/>
         </div>
             <br />
         <div align="center" class="container">
