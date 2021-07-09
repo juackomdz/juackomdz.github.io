@@ -11,6 +11,10 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 
+#seleccion{
+    text-align: center;
+}
+
 @media (max-width: 480px) {
     #sorteo{
         width: 200px;
