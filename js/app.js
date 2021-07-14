@@ -20,6 +20,12 @@ function sortearAct()
     }
     numeros.sort(function(a, b){return a - b});
     document.getElementById("sorteo").value=numeros.join("-");
+
+    seleccion=document.getElementById("sel")
+    if(seleccion===null)
+    {
+        alert("Ingrese un valor");
+    }
 }
 //select numero 1
 select = document.getElementById("sel");
@@ -61,8 +67,4 @@ for(i=1; i<31; i++){
     option.text=i;
     select.appendChild(option);
 }
-// let texto="";
-// for(let i=1; i<31; i++){
-//     texto+=i + "<br>";
-// } 
-// document.getElementById("sel").options[texto].value;
+
