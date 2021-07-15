@@ -42,27 +42,6 @@ for(i=1; i<31; i++){
 function sortearAct()
 {
     const numeros = [];
-    while(numeros.length<5)
-    {
-        var existe = false;
-        var rnd=Math.floor(Math.random()*30)+1;
-        for(var i=0;i<numeros.length;i++)
-        {
-            if(numeros[i]==rnd)
-            {
-                existe=true;
-                break;
-            }
-        }
-        if(!existe)
-        {
-            numeros.push(rnd);
-        }
-    }
-    numeros.sort(function(a, b){return a - b});
-    document.getElementById("sorteo").value=numeros.join("-");
-
-    //validaciones droplist
     var seleccion=document.getElementById("sel").selectedIndex;
     var seleccion2=document.getElementById("sel2").selectedIndex;
     var seleccion3=document.getElementById("sel3").selectedIndex;
@@ -71,6 +50,27 @@ function sortearAct()
     if(seleccion==0 || seleccion2==0 || seleccion3==0 || seleccion4==0 || seleccion5==0)
     {
         alert("Ingrese un valor");
+    }else
+    {
+        while(numeros.length<5)
+        {
+            var existe = false;
+            var rnd=Math.floor(Math.random()*30)+1;
+            for(var i=0;i<numeros.length;i++)
+            {
+                if(numeros[i]==rnd)
+                {
+                    existe=true;
+                    break;
+                }
+            }
+            if(!existe)
+            {
+                numeros.push(rnd);
+            }
+        }
+        numeros.sort(function(a, b){return a - b});
+        document.getElementById("sorteo").value=numeros.join("-");
     }
 }
 
