@@ -74,4 +74,13 @@ function sortearAct()
     }
 }
 
+var typed = new Typed("#typed", {
+    stringsElement: "#typedjs",
+    typeSpeed: 0,
+    backSpeed: 0,
+    backDelay: 500,
+    startDelay: 1000,
+    loop: false,
+  });
+
 
