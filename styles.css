@@ -21,6 +21,11 @@ body{
     text-align: center;
 }
 
-span{
-    align-items: center;
+#conteo{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.typed{
+    text-align: center;
 }
